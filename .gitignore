@@ -1,0 +1,7 @@
+.venv/
+.env
+__pycache__/
+user_profile.json
+travel_history.db
+travel_history.db-shm
+travel_history.db-wal

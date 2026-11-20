@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eff8fb">
+  <meta name="description" content="Plan your next adventure with a friendly AI travel planner.">
+  <title>Your AI Travel Planner</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Travel Planner home">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span>Trip<span class="brand-accent">Tales</span></span>
+    </a>
+    <a class="header-link" href="#features">Explore features <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT CHAPTER STARTS HERE</span>
+        <h1 id="hero-title">Your AI<br><span class="title-highlight">Travel Planner</span></h1>
+        <p>Big dreams, thoughtful details, and a trip that feels like yours. Tell us where your imagination is taking you.</p>
+        <a class="button button-primary hero-button" href="#chat">Start planning <span aria-hidden="true">→</span></a>
+        <div class="hero-note"><span aria-hidden="true">✈</span> Made for curious travellers everywhere</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="hero-globe"><span>✈</span></div>
+        <div class="cloud cloud-one"></div>
+        <div class="cloud cloud-two"></div>
+        <div class="sparkle sparkle-one">✦</div>
+        <div class="sparkle sparkle-two">✧</div>
+        <div class="destination-card">
+          <span class="destination-pin">⌖</span>
+          <span><strong>Somewhere wonderful</strong><small>Your next favourite place</small></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="chat-section" id="chat" aria-labelledby="chat-title">
+      <div class="section-heading">
+        <span class="eyebrow">LET'S MAKE A PLAN</span>
+        <h2 id="chat-title">Where to next?</h2>
+        <p>Share a little about your trip and we'll dream up the details together.</p>
+      </div>
+      <div class="chat-card">
+        <div class="chat-topbar">
+          <div class="assistant-identity">
+            <span class="assistant-avatar" aria-hidden="true">✈</span>
+            <span><strong>Your travel buddy</strong><small><span class="online-dot"></span> Ready to explore</small></span>
+          </div>
+          <button class="button button-quiet" id="new-trip" type="button"><span aria-hidden="true">＋</span> New trip</button>
+        </div>
+        <div class="chat-messages" id="messages" role="log" aria-live="polite" aria-relevant="additions">
+          <article class="message agent-message">
+            <span class="message-avatar" aria-hidden="true">🌍</span>
+            <div class="message-content">
+              <div class="message-bubble">
+                <p>Assalamu alaikum! I'm your travel-planning buddy. 🌤️</p>
+                <p>Where are you dreaming of going? Tell me your dates, travel style, or just the feeling you're after — <span lang="ur">thandi jagah</span>, beach days, a little adventure... let's make it yours!</p>
+                <p>The more detail you share, the better your plan will be. Tap 'Example prompt' to see an example.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="composer-area">
+          <p class="quick-label">Need a little inspiration?</p>
+          <div class="quick-chips" aria-label="Quick trip ideas">
+            <button type="button" class="quick-chip">❄️ Thandi jagah</button>
+            <button type="button" class="quick-chip">🏖️ Beach trip</button>
+            <button type="button" class="quick-chip">💛 Honeymoon</button>
+            <button type="button" class="quick-chip">💸 Budget trip</button>
+            <button type="button" class="quick-chip">👨‍👩‍👧 Family trip</button>
+            <button type="button" class="quick-chip example-prompt-button" id="example-prompt">Example prompt</button>
+          </div>
+          <form class="composer" id="chat-form">
+            <label class="sr-only" for="message-input">Your travel idea</label>
+            <textarea id="message-input" rows="1" maxlength="10000" placeholder="Tell me what kind of trip you're dreaming of..." required></textarea>
+            <button class="send-button" type="submit" aria-label="Send message"><span aria-hidden="true">➤</span></button>
+          </form>
+          <p class="composer-hint">Press Enter to send <span aria-hidden="true">·</span> Shift + Enter for a new line</p>
+          <p class="prompt-hint">For a better plan, share details: destination, number of days, travel month, who is travelling, budget, and interests (beach, shopping, history, food).</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section" id="features" aria-labelledby="features-title">
+      <div class="section-heading">
+        <span class="eyebrow">THOUGHTFUL TRAVEL, MADE SIMPLE</span>
+        <h2 id="features-title">A little help with every detail</h2>
+        <p>From the first “what if?” to the last day of your itinerary.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-icon icon-blue">✧</span><h3>Find your place</h3><p>Discover destinations that fit your mood, season, and travel style.</p></article>
+        <article class="feature-card"><span class="feature-icon icon-orange">◈</span><h3>Plan your budget</h3><p>Build a practical trip estimate with clear costs and helpful trade-offs.</p></article>
+        <article class="feature-card"><span class="feature-icon icon-green">⌂</span><h3>Stay somewhere lovely</h3><p>Explore stay styles, neighbourhoods, and what to look for when booking.</p></article>
+        <article class="feature-card"><span class="feature-icon icon-pink">♡</span><h3>Taste the journey</h3><p>Find local food ideas with your dietary needs and preferences in mind.</p></article>
+        <article class="feature-card"><span class="feature-icon icon-purple">☼</span><h3>Make every day count</h3><p>Get a day-by-day itinerary with room to wander, rest, and explore.</p></article>
+        <article class="feature-card"><span class="feature-icon icon-yellow">✈</span><h3>Travel prepared</h3><p>Get guidance for flights, visas, documents, and the details to verify.</p></article>
+      </div>
+    </section>
+
+    <section class="closing-banner">
+      <span class="closing-sparkle" aria-hidden="true">✦</span>
+      <p>The world is waiting. <strong>Let's make it your story.</strong></p>
+      <a href="#chat" aria-label="Start planning your trip">Start planning <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#"><span class="brand-mark" aria-hidden="true">✦</span><span>Trip<span class="brand-accent">Tales</span></span></a>
+    <p>Made for the places you'll remember. <span aria-hidden="true">✦</span></p>
+    <span class="footer-copy">© 2026 TripTales</span>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+  <script src="/static/script.js"></script>
+</body>
+</html>
