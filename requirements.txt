@@ -1,4 +1,8 @@
 fastapi
-uvicorn
-python-dotenv
-requests
+uvicorn==0.54.0
+openai-agents==0.24.0
+openai==3.41.0
+python-dotenv==1.2.4
+requests==2.34.2
+duckduckgo_search==8.1.1
+fpdf2==2.8.9
